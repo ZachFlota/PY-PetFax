@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>UserFax</h1>
+    <div class="container">
+        <h1>UserFax</h1>
+        {% for fact in facts %}
+            <h4>Submitted by {{ fact.submitter }}</h4>
+        {% endfor %}
+    </div>
 </body>
 </html>
